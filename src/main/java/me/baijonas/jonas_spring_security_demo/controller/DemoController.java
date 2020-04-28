@@ -12,4 +12,16 @@ public class DemoController {
     public String home() {
         return "<h1>HELLO!</h1>";
     }
+
+    @GetMapping
+    @RequestMapping("/user")
+    public String user() {
+        return "<h1>HELLO! USER</h1>";
+    }
+
+    @GetMapping
+    @RequestMapping("/admin")
+    public String admin() {
+        return "<h1>HELLO! ADMIN!</h1>";
+    }
 }
